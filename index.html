@@ -176,7 +176,7 @@
     <div class="container">
       <h2 class="customers-title">WHAT OUR
         COSTUMER’S SAY</h2>
-      <img src="./img/desktop/5-costumers/costumers-1-1x.png" alt="">
+      <img class="customers-img" src="./img/desktop/5-costumers/costumers-1-1x.png" alt="">
       <p class="customers-name">Jon Doe</p>
       <p class="customers-desc">Company Inc.</p>
       <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero
@@ -192,42 +192,58 @@
   <section class="contact section">
     <div class="container">
       <h2 class="contact-title">CONTACT US</h2>
+
       <form action="" class="contact-form">
         <label for="name">
-          <input type="text" id="name" placeholder="Name" required>
+          <input class="contact-input" type="text" id="name" placeholder="Name" required>
         </label>
 
         <label for="mail">
-          <input type="email" id="mail" placeholder="Email" required>
+          <input class="contact-input" type="email" id="mail" placeholder="Email" required>
         </label>
 
         <label for="message">
-          <textarea name="message" id="message" placeholder="Message"></textarea>
+          <textarea class="contact-textarea" name="message" id="message" placeholder="Message"></textarea>
         </label>
-        <button type="submit">
+        <button class="submit-button" type="submit">
           SUBMIT
         </button>
       </form>
-      <p class="contact-title">Get in touch with us</p>
+
+      <p class="contact-subtitle">Get in touch with us</p>
       <p class="contact-text">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla
         nulla sollicitudin tristique.</p>
       <ul class="contact-list">
-        <li class="contact-item"><a href="" class="contact-link"></a></li>
-        <li class="contact-item"><a href="" class="contact-link"></a></li>
-        <li class="contact-item"><a href="" class="contact-link"></a></li>
+        <li class="contact-item"><a href="" class="contact-link">
+            <svg class="contact-icon" width="40" height="40">
+              <use href="./sprite.svg#"></use>
+            </svg>
+          </a></li>
+        <li class="contact-item"><a href="" class="contact-link">
+            <svg class="contact-icon" width="40" height="40">
+              <use href="./sprite.svg#"></use>
+            </svg>
+          </a></li>
+        <li class="contact-item"><a href="" class="contact-link">
+            <svg class="contact-icon" width="40" height="40">
+              <use href="./sprite.svg#"></use>
+            </svg>
+          </a></li>
       </ul>
       <address>
         <ul class="address-list">
-          <li class="address-item"><a href="" class="address-link">+xx-xxxx-xxxx-xx</a></li>
-          <li class="address-item"><a href="" class="address-link">goIteens@gmail.com</a></li>
+          <li class="address-item"><a href="" class="address-link-number">+xx-xxxx-xxxx-xx</a></li>
+          <li class="address-item"><a href="" class="address-link-mail">goIteens@gmail.com</a></li>
         </ul>
 
       </address>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
+  <div class="decoration-down"></div>
+
+  <footer class="footer">
+    <div class="container footer-content">
       <p class="footer-text">
         © 2019 GoIteens Template. All Rights Reserved
       </p>

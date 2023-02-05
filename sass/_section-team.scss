@@ -4,6 +4,24 @@ $gradient-color: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
 $dark-bcg: #06071b;
 $light-bcg: #ffffff;
 
+.team {
+ 
+  padding-bottom: 0;
+    
+  @media screen and (max-width: 767px) {
+   
+  }
+  @media screen and (min-width: 768px) {
+ 
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+}
+
 .team-title {
   text-align: center;
   font-weight: 700;
@@ -62,9 +80,11 @@ $light-bcg: #ffffff;
   @media screen and (max-width: 767px) {
     flex-direction: column;
     gap: 24px;
+   
   }
 
   @media screen and (min-width: 768px) {
+   
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -103,8 +123,6 @@ $light-bcg: #ffffff;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-
-    flex-basis: (( 100% - 32px ) / 2);
   }
 
   @media screen and (min-width: 1280px) {

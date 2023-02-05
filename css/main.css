@@ -49,6 +49,54 @@ address {
   font-style: normal;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1248px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
 .header {
   background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
   position: absolute;
@@ -495,6 +543,9 @@ address {
   }
 }
 
+.team {
+  padding-bottom: 0;
+}
 .team-title {
   text-align: center;
   font-weight: 700;
@@ -640,51 +691,336 @@ address {
   color: #ffffff;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.container {
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
+.customers {
+  text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
+  .customers {
+    padding-top: 40px;
+    padding-bottom: 86px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 704px;
+  .customers {
+    padding-top: 80px;
+    padding-bottom: 106px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1248px;
+  .customers {
+    padding-bottom: 126px;
+  }
+}
+
+.customers-title {
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .customers-title {
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 179px;
+    height: 48px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-title {
+    font-size: 24px;
+    line-height: 1.2;
+    max-width: 352px;
+    height: 29px;
+  }
+}
+.customers-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.customers-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+.customers-desc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+}
+@media screen and (max-width: 767px) {
+  .customers-desc {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-desc {
+    margin-bottom: 40px;
+  }
+}
+.customers-text {
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .customers-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customers-text {
+    max-width: 886px;
+    height: 96px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.contact {
+  background: #06071b;
+}
+
+.contact-title {
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .contact-title {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-title {
+    margin-bottom: 80px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}
+.contact-input {
+  padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 8px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 767px) {
+  .contact-input {
+    width: 100%;
+    height: 40px;
+  }
+}
+.contact-textarea {
+  padding-top: 12px;
+  padding-left: 8px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 767px) {
+  .contact-textarea {
+    width: 100%;
+    height: 220px;
+  }
+}
+.submit-button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  width: 181px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  border-radius: 5px;
+  cursor: pointer;
+  border: transparent;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .submit-button {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .submit-button {
+    margin-bottom: 40px;
+  }
+}
+.contact-subtitle {
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .contact-subtitle {
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 @media screen and (min-width: 768px) {
-  .section {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  .contact-subtitle {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contact-subtitle {
+    text-align: center;
+  }
+}
+.contact-text {
+  font-weight: 500;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .contact-text {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-text {
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .contact-text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    height: 38px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-text {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1280px) {
+  .contact-list {
+    margin-bottom: 20px;
+  }
+}
+
+.contact-item {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  border-radius: 50%;
+}
+
+.contact-link {
+  display: block;
+}
+
+.address-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.address-link-number {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.address-link-mail {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.decoration-down {
+  border: 1px solid #FFFFFF;
+  width: 100%;
+}
+
+.footer {
+  background: #06071B;
+}
+
+.footer-content {
+  padding: 0;
+}
+
+.footer-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .footer-text {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    padding-left: 24px;
+    padding-right: 103px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .footer-text {
+    padding-top: 22px;
+    padding-bottom: 28px;
+    padding-left: 32px;
+    padding-right: 236px;
   }
 }/*# sourceMappingURL=main.css.map */
