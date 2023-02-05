@@ -6,44 +6,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mobile App Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
+  <div class="hero-box">
+    
+    <header class="header">
+      <div class="header-content container">
+        <a href="./index.html" class="header-logo">Mobileapp</a>
+        <button class="open-button-mobile">
+          <svg class="icon-burger">
+            <use href="./sprite.svg#icon-Burger"></use>
+          </svg>
+  
+        </button>
+        <ul class="header-list">
+          <li class="header-item"><a href="" class="header-link">HOME</a></li>
+          <li class="header-item"><a href="" class="header-link">FEATURES</a></li>
+          <li class="header-item"><a href="" class="header-link">TEAM</a></li>
+          <li class="header-item"><a href="" class="header-link">TESTIMONIALS</a></li>
+          <li class="header-item"><a href="" class="header-link">CONTACT</a></li>
+        </ul>
+  
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero-content container">
+        <h1 class="hero-title">Introducing Mobileapp</h1>
+        <p class="hero-text">Maecenas vitae tellus sapien. Prasent</p>
+        <ul class="hero-list">
+          <li class="hero-item">semper scelerisque tristique a enim</li>
+          <li class="hero-item">Integer ut mattis nulla, eget vehicula elit</li>
+          <li class="hero-item">Prasent rutrum ac nunc et</li>
+        </ul>
+        <button class="hero-button" type="submit">Download</button>
+      </div>
+      <div class="decoration"></div>
+    </section>
+  </div>
 
-  <header class="header">
-    <div class="container">
-      <a href="" class="header-logo">Mobileapp</a>
-      <button class="open-button">
-
-      </button>
-      <ul class="header-list">
-        <li class="header-item"><a href="" class="header-link">HOME</a></li>
-        <li class="header-item"><a href="" class="header-link">FEATURES</a></li>
-        <li class="header-item"><a href="" class="header-link">TEAM</a></li>
-        <li class="header-item"><a href="" class="header-link">TESTIMONIALS</a></li>
-        <li class="header-item"><a href="" class="header-link">CONTACT</a></li>
-      </ul>
-
-      <svg class="header-icon">
-        <use></use>
-      </svg>
-
-    </div>
-  </header>
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">Introducing Mobileapp</h1>
-      <p class="hero-text">Maecenas vitae tellus sapien. Prasent</p>
-      <ul class="hero-list">
-        <li class="hero-item">semper scelerisque tristique a enim</li>
-        <li class="hero-item">Integer ut mattis nulla, eget vehicula elit</li>
-        <li class="hero-item">Prasent rutrum ac nunc et</li>
-      </ul>
-      <button type="submit">Download</button>
-    </div>
-  </section>
-
-  <section class="features">
+  <section class="features section">
     <div class="container">
       <h2 class="features-title">KEY FEATURES</h2>
       <p class="features-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit
@@ -53,54 +60,72 @@
       <img src="./img/mobile/2-features/features-1-1x.png" alt="">
       <ul class="features-list">
         <li class="features-item">
-          <h3 class="features-suptitle">Amet varius</h3>
-          <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
-            diam a iaculis malesuada</p>
+          <div class="features-box">
+            <h3 class="features-suptitle">Amet varius</h3>
+            <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+              diam a iaculis malesuada</p>
+          </div>
         </li>
         <li class="features-item">
-          <h3 class="features-suptitle">Amet varius</h3>
-          <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
-            diam a iaculis malesuada</p>
+          <div class="features-box">
+            <h3 class="features-suptitle">Amet varius</h3>
+            <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+              diam a iaculis malesuada</p>
+          </div>
         </li>
         <li class="features-item">
-          <h3 class="features-suptitle">Amet varius</h3>
-          <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
-            diam a iaculis malesuada</p>
+          <div class="features-box">
+            <h3 class="features-suptitle">Amet varius</h3>
+            <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+              diam a iaculis malesuada</p>
+          </div>
         </li>
         <li class="features-item">
-          <h3 class="features-suptitle">Amet varius</h3>
-          <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
-            diam a iaculis malesuada</p>
+          <div class="features-box">
+            <h3 class="features-suptitle">Amet varius</h3>
+            <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+              diam a iaculis malesuada</p>
+          </div>
         </li>
         <li class="features-item">
-          <h3 class="features-suptitle">Amet varius</h3>
-          <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
-            diam a iaculis malesuada</p>
+         <div class="features-box">
+            <h3 class="features-suptitle">Amet varius</h3>
+            <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+              diam a iaculis malesuada</p>
+         </div>
         </li>
         <li class="features-item">
-          <h3 class="features-suptitle">Amet varius</h3>
-          <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
-            diam a iaculis malesuada</p>
+         <div class="features-box">
+            <h3 class="features-suptitle">Amet varius</h3>
+            <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+              diam a iaculis malesuada</p>
+         </div>
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="video">
+  <section class="video section">
     <div class="container">
       <h2 class="video-title">WATCH THE VIDEO</h2>
       <p class="video-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
         fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus,
         ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
       <ul class="video-list">
-        <li class="video-item"><a href="" class="video-link"></a></li>
-        <li class="video-item"><a href="" class="video-link"></a></li>
+        <li class="video-item"><a href="" class="video-link">
+
+          <img src="./img/mobile/3-video/apple-1-1x.png" alt="">
+        </a></li>
+        <li class="video-item"><a href="" class="video-link">
+          <img src="./img/mobile/3-video/android-1-1x.png" alt="">
+
+        </a></li>
       </ul>
       <img src="./img/mobile/3-video/video-1x.png" alt="">
     </div>
   </section>
 
-  <section class="team">
+  <section class="team section">
     <div class="container">
       <h2 class="team-title">OUR TEAM</h2>
       <p class="team-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet
@@ -148,7 +173,7 @@
         massa et ante pulvinar, id</p>
     </div>
   </section>
-  <section class="contact">
+  <section class="contact section">
     <div class="container">
       <h2 class="contact-title">CONTACT US</h2>
       <form action="" class="contact-form">

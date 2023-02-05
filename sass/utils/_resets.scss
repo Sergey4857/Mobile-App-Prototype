@@ -1,6 +1,11 @@
-:root {
 
-}
+
+$main-text-color:#000000;
+$secondary-text-color:#FFFFFF;
+$gradient-color:linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+$dark-bcg:#06071B;
+$light-bcg:#FFFFFF;
+
 
 html {
   box-sizing: border-box;
@@ -12,9 +17,9 @@ html {
 }
 
 body {
-  background-color: var(--main-background-color);
+  background-color: var(--light-bcg);
   color: var(--main-text-color);
-  font-family: Roboto, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
