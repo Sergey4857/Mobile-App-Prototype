@@ -1,0 +1,89 @@
+.backdrop{
+  position: absolute;
+width: 100%;
+height: 100%; 
+top: 0;
+left: 0;
+background: #06071b;
+}
+.modal{
+position: absolute;
+
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+@media screen and (max-width: 767px) {
+  max-width: 280px;
+  }
+
+@media screen and (min-width: 768px)  {
+  max-width: 568px;
+  }
+
+@media screen and (min-width: 1280px) {
+
+  }
+}
+
+.title-download{
+
+font-weight: 700;
+font-size: 20px;
+line-height: 1.4;
+
+color: #FFFFFF;
+
+@media screen and (min-width: 768px)  {
+font-size: 24px;
+line-height: 1.17;
+
+  }
+
+}
+.subtitle-download{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.item-download{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+
+color: #FFFFFF;
+
+&::before{
+content: '';
+display: block;
+width: 14px;
+height: 14px;
+background-color: #B544FE;
+}
+}
+
+.download-text{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+
+color: #FFFFFF;
+
+
+}
+
+.box-free{
+background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+border-radius: 6px;
+}
+.box-paid{
+ border: 2px solid red;
+}
+
+
+.download-list-info{
+border: 2px solid red;
+}
