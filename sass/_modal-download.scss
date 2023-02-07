@@ -1,29 +1,126 @@
+// .backdrop {
+//   position: fixed;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+//   background-color: rgba(46, 47, 66, 0.4);
+//   opacity: 1;
+//   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+
+// .modal {
+//   position: absolute;
+//   width: 408px;
+//   height: 584px;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   background: #fcfcfc;
+//   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 4px;
+//   padding-top: 72px;
+//   padding-left: 24px;
+//   padding-right: 24px;
+//   padding-bottom: 24px;
+// }
+
+
 .backdrop{
-  position: absolute;
+position: fixed;
 width: 100%;
 height: 100%; 
 top: 0;
 left: 0;
+opacity: 1;
 background: #06071b;
+overflow: auto;
+
 }
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+}
+
 .modal{
+ 
 position: absolute;
 
-top: 50%;
+top: 0px;
+
 left: 50%;
-transform: translate(-50% , -50%);
+transform: translate(-50%);
+
+
+
 @media screen and (max-width: 767px) {
-  max-width: 280px;
+  width: 280px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  }
+  @media screen and (max-width: 320px) {
+  width: 95%;
+
   }
 
 @media screen and (min-width: 768px)  {
-  max-width: 568px;
+  width: 568px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   }
 
 @media screen and (min-width: 1280px) {
 
   }
 }
+.btn-close-modal{
+position: absolute;
+top: 20px;
+right: 20px;
+
+display: inline-block;
+background: transparent;
+border: transparent;
+padding: 0;
+justify-content: center;
+align-items: center;
+
+@media screen and (max-width: 767px) {
+width: 24px;
+height: 24px;
+  }
+
+@media screen and (min-width: 768px)  {
+width: 28px;
+height: 28px;
+  }
+}
+.icon-close-modal{
+
+@media screen and (max-width: 767px) {
+width: 24px;
+height: 24px;
+  }
+
+@media screen and (min-width: 768px)  {
+width: 28px;
+height: 28px;
+  }
+
+
+}
+
+
 
 .title-download{
 
@@ -32,12 +129,20 @@ font-size: 20px;
 line-height: 1.4;
 
 color: #FFFFFF;
+text-align: center;
+@media screen and (max-width: 767px) {
+margin-bottom: 24px;
+  }
+
 
 @media screen and (min-width: 768px)  {
 font-size: 24px;
 line-height: 1.17;
+margin-bottom: 28px;
 
   }
+
+
 
 }
 .subtitle-download{
@@ -47,9 +152,28 @@ line-height: 1.5;
 text-align: center;
 
 color: #FFFFFF;
+
+margin-bottom: 20px;
+}
+.list-download{
+
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  
+  gap: 12px;
+
+
+
 }
 
+
+
 .item-download{
+display: flex;
+align-items: baseline;
+
+gap: 4px;
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
@@ -58,10 +182,15 @@ color: #FFFFFF;
 
 &::before{
 content: '';
-display: block;
-width: 14px;
+display: inline-flex;
+
+
+min-width: 14px;
 height: 14px;
-background-color: #B544FE;
+
+background-image: url(../svg/mark.svg);
+background-repeat: no-repeat;
+
 }
 }
 
@@ -72,18 +201,264 @@ line-height: 1.5;
 
 color: #FFFFFF;
 
+@media screen and (max-width: 767px) {
+margin-bottom: 25px;
+
+  }
+
+@media screen and (min-width: 768px)  {
+
+margin-bottom: 32px;
+  }
 
 }
+
+.box-download{
+display: flex;
+
+@media screen and (max-width: 767px) {
+  flex-direction: column;
+  row-gap: 20px;
+  margin-bottom: 28px;
+
+
+  }
+
+@media screen and (min-width: 768px)  {
+  gap: 22px;
+margin-bottom: 32px;
+
+  }
+
+}
+
+
+
 
 .box-free{
+border: 3px solid skyblue;
+border-image-source: url(../img/Rectangle\ 38.png);
+ border-image-slice: 3;
+padding-top: 28px;
+padding-bottom: 28px;
+
+&:hover {
 background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 border-radius: 6px;
+border: 3px solid transparent;
+
+
 }
+}
+
+
+
+
+.icon-download{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+margin-bottom: 20px;
+
+
+}
+
+
+
+
+
 .box-paid{
- border: 2px solid red;
+border: 3px solid skyblue;
+border-image-source: url(../img/Rectangle\ 38.png);
+ border-image-slice: 3;
+padding-top: 28px;
+padding-bottom: 28px;
+
+&:hover, &:active{
+background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+border-radius: 6px;
+border: 3px solid transparent;
+
+
 }
+}
+.download-info{
+  padding-top: 20px;
+padding-bottom: 20px;
+
+@media screen and (max-width: 767px) {
+  padding-left: 20px;
+background-image: url(../img/box-download.png);
+background-repeat: no-repeat;
+
+
+margin-bottom: 20px;
+  }
+
+@media screen and (min-width: 768px)  {
+  background-image: url(../img/box-download-tablet.png);
+
+  display: flex;
+margin-bottom: 32px;
+background-repeat: no-repeat;
+
+  }
+
+
+}
+.download-info-decoration{
+
+
+
+}
+
+
+
 
 
 .download-list-info{
-border: 2px solid red;
+ display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+
+  @media screen and (max-width: 767px) {
+   
+    &:first-child{
+    margin-bottom: 40px;
+    }
+  }
+
+@media screen and (min-width: 768px)  {
+  width: 50%;
+  padding-left: 20px;
+
+  }
+}
+
+.download-item-info{
+display: flex;
+align-items: center;
+gap: 10px;
+
+
+&::before{
+content: '';
+display: inline-flex;
+width: 28px;
+height: 28px;
+
+}
+}
+.icon-app{
+&::before{
+content: '';
+
+background-image: url(../svg/app.svg);
+}
+}
+
+.icon-license{
+&::before{
+content: '';
+
+background-image: url(../svg/license.svg);
+}
+
+}
+.icon-author{
+&::before{
+content: '';
+
+background-image: url(../svg/author.svg);
+}
+
+}
+.icon-data{
+&::before{
+content: '';
+
+background-image: url(../svg/data.svg);
+}
+
+}
+.icon-oc{
+&::before{
+content: '';
+
+background-image: url(../svg/OC.svg);
+}
+
+}
+.icon-language{
+&::before{
+content: '';
+
+background-image: url(../svg/language.svg);
+}
+
+}
+.icon-size{
+&::before{
+content: '';
+
+background-image: url(../svg/size.svg);
+}
+
+}
+.icon-downloads{
+&::before{
+content: '';
+
+background-image: url(../svg/download-mini.svg);
+}
+
+}
+
+
+.download-content{
+display: flex;
+flex-direction: column;
+gap: 4px;
+
+}
+
+
+
+
+
+
+.download-subtitle-info{
+font-weight: 400;
+font-size: 12px;
+line-height: 1.25;
+color: #FFFFFF;
+}
+
+.download-text-info{
+
+font-weight: 400;
+font-size: 12px;
+line-height: 1.25;
+color: #1AB9FD;
+
+}
+
+.btn-download{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+@media screen and (max-width: 767px) {
+  max-width: 232px;
+  height: 42px;
+
+  }
+
+@media screen and (min-width: 768px)  {
+
+
+  }
+
 }

@@ -25,13 +25,16 @@
           </svg>
 
         </button>
-        <ul class="header-list">
-          <li class="header-item"><a href="" class="header-link">HOME</a></li>
-          <li class="header-item"><a href="" class="header-link">FEATURES</a></li>
-          <li class="header-item"><a href="" class="header-link">TEAM</a></li>
-          <li class="header-item"><a href="" class="header-link">TESTIMONIALS</a></li>
-          <li class="header-item"><a href="" class="header-link">CONTACT</a></li>
-        </ul>
+
+        <!-- <div class="menu-container"> -->
+          <ul class="header-list">
+            <li class="header-item"><a href="" class="header-link">HOME</a></li>
+            <li class="header-item"><a href="" class="header-link">FEATURES</a></li>
+            <li class="header-item"><a href="" class="header-link">TEAM</a></li>
+            <li class="header-item"><a href="" class="header-link">TESTIMONIALS</a></li>
+            <li class="header-item"><a href="" class="header-link">CONTACT</a></li>
+          </ul>
+        <!-- </div> -->
 
       </div>
     </header>
@@ -44,7 +47,7 @@
           <li class="hero-item">Integer ut mattis nulla, eget vehicula elit</li>
           <li class="hero-item">Prasent rutrum ac nunc et</li>
         </ul>
-        <button class="hero-button" type="submit">Download</button>
+        <button class="hero-button" type="submit" data-modal-open >Download</button>
       </div>
       <div class="decoration"></div>
     </section>
@@ -194,13 +197,16 @@
       <h2 class="contact-title">CONTACT US</h2>
 
       <form action="" class="contact-form">
-        <label for="name">
-          <input class="contact-input" type="text" id="name" placeholder="Name" required>
-        </label>
-
-        <label for="mail">
-          <input class="contact-input" type="email" id="mail" placeholder="Email" required>
-        </label>
+        <div class="container-input">
+          
+          <label for="name">
+            <input class="contact-input" type="text" id="name" placeholder="Name" required>
+          </label>
+  
+          <label for="mail">
+            <input class="contact-input" type="email" id="mail" placeholder="Email" required>
+          </label>
+        </div >
 
         <label for="message">
           <textarea class="contact-textarea" name="message" id="message" placeholder="Message"></textarea>
@@ -214,20 +220,14 @@
       <p class="contact-text">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla
         nulla sollicitudin tristique.</p>
       <ul class="contact-list">
-        <li class="contact-item"><a href="" class="contact-link">
-            <svg class="contact-icon" width="40" height="40">
-              <use href="./sprite.svg#"></use>
-            </svg>
+        <li class="contact-item"><a href="" class="contact-link-facebook">
+        
           </a></li>
-        <li class="contact-item"><a href="" class="contact-link">
-            <svg class="contact-icon" width="40" height="40">
-              <use href="./sprite.svg#"></use>
-            </svg>
+        <li class="contact-item"><a href="" class="contact-link-twitter">
+            
           </a></li>
-        <li class="contact-item"><a href="" class="contact-link">
-            <svg class="contact-icon" width="40" height="40">
-              <use href="./sprite.svg#"></use>
-            </svg>
+        <li class="contact-item"><a href="" class="contact-link-linkedin">
+            
           </a></li>
       </ul>
       <address>
@@ -250,87 +250,115 @@
     </div>
   </footer>
 
-  <div class="backdrop">
-    <div class="modal">
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal" >
 
-      <div class="container">
-        <h1 class="title-download">Download</h1>
-        <button class="btn-close"></button>
-
-        <div class="box-free">
-
-          <svg>
-            <use href="./sprite.svg#icon-download"></use>
+    
+        <h1 class="title-download" >Download</h1>
+        <button class="btn-close-modal" data-modal-close>
+          <svg class="icon-close-modal">
+            <use href="./sprite.svg#icon-close"></use>
           </svg>
-          <h2 class="subtitle-download">Download free plan</h2>
-          <ul class="list-download">
-            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
-            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
-          </ul>
-        </div>
 
-        <div class="box-paid">
-          <svg>
-            <use href="./sprite.svg#icon-download"></use>
-          </svg>
-          <h2 class="subtitle-download">Download for 20$</h2>
-          <ul class="list-download">
-            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
-            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
-            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
-          </ul>
+        </button>
+        <div class="box-download">
+          
+          <div class="box-free">
+  
+            <svg class="icon-download" width="80" height="106">
+              <use href="./sprite.svg#icon-download"></use>
+            </svg>
+            <h2 class="subtitle-download">Download free plan</h2>
+            <ul class="list-download">
+              <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+              <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+            </ul>
+          </div>
+  
+          <div class="box-paid">
+            <svg class="icon-download" width="80" height="106">
+              <use href="./sprite.svg#icon-download"></use>
+            </svg>
+            <h2 class="subtitle-download">Download for 20$</h2>
+            <ul class="list-download">
+              <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+              <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+              <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+            </ul>
+          </div>
         </div>
 
         <p class="download-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit
           amet lectus non lacus</p>
-        <ul class="download-list-info">
-          <li class="download-item-info">
-            <p class="download-subtitle-info">App name</p>
-            <p class="download-text-info">Mobileapp.layout</p>
-          </li>
-          <li class="download-item-info">
-            <p class="download-subtitle-info">License</p>
-            <p class="download-text-info">Free</p>
-          </li>
-          <li class="download-item-info">
-            <p class="download-subtitle-info">Author</p>
-            <p class="download-text-info">Mobile Marrket App.com</p>
-          </li>
-          <li class="download-item-info">
-            <p class="download-subtitle-info">Data</p>
-            <p class="download-text-info">21.02.2022</p>
-          </li>
-        </ul>
 
-        <ul class="download-list-info">
-          <li class="download-item-info">
-            <p class="download-subtitle-info">OC</p>
-            <p class="download-text-info">Windows</p>
-          </li>
-          <li class="download-item-info">
-            <p class="download-subtitle-info">Language</p>
-            <p class="download-text-info">English</p>
-          </li>
-          <li class="download-item-info">
-            <p class="download-subtitle-info">Size</p>
-            <p class="download-text-info">4.16 MB</p>
-          </li>
-          <li class="download-item-info">
-            <p class="download-subtitle-info">Downloads</p>
-            <p class="download-text-info">964</p>
-          </li>
-        </ul>
-        <button type="submit" class="btn-download">Download</button>
-      </div>
+        <div class="download-info">
+            
+          <ul class="download-list-info">
+            <li class="download-item-info icon-app">
+              <div class="download-content">
+                <p class="download-subtitle-info">App name</p>
+                <p class="download-text-info">Mobileapp.layout</p>
+              </div>
+            </li>
+            <li class="download-item-info icon-license">
+              <div class="download-content">
+                <p class="download-subtitle-info">License</p>
+                <p class="download-text-info">Free</p>
+              </div>
+            </li>
+            <li class="download-item-info icon-author">
+              <div class="download-content">
+                <p class="download-subtitle-info">Author</p>
+                <p class="download-text-info">Mobile Marrket App.com</p>
+              </div>
+            </li>
+            <li class="download-item-info icon-data">
+              <div class="download-content">
+                <p class="download-subtitle-info">Data</p>
+                <p class="download-text-info">21.02.2022</p>
+              </div>
+            </li>
+          </ul>
+          <!-- <div class="download-info-decoration"></div> -->
+          <ul class="download-list-info">
+            <li class="download-item-info icon-oc">
+              <div class="download-content">
+                <p class="download-subtitle-info">OC</p>
+                <p class="download-text-info">Windows</p>
+              </div>
+            </li>
+            <li class="download-item-info icon-language">
+             <div class="download-content">
+                <p class="download-subtitle-info">Language</p>
+                <p class="download-text-info">English</p>
+             </div>
+            </li>
+            <li class="download-item-info icon-size">
+              <div class="download-content">
+                <p class="download-subtitle-info">Size</p>
+                <p class="download-text-info">4.16 MB</p>
+              </div>
+            </li>
+            <li class="download-item-info icon-downloads">
+              <div class="download-content">
+                <p class="download-subtitle-info">Downloads</p>
+                <p class="download-text-info">964</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button type="submit" class="btn-download hero-button" >Download</button>
+      
 
 
     </div>
   </div>
 
-
-
-
-
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 
 </body>
 

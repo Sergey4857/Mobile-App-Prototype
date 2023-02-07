@@ -1,7 +1,7 @@
 
 
 .header{
-  
+ 
 
 background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
 position: absolute;
@@ -12,6 +12,8 @@ width: 100%;
 @media screen and (max-width: 767px) {
 padding-top: 14px;
 padding-bottom: 14px;
+position: relative;
+
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
 padding-left: 32px;
@@ -38,7 +40,27 @@ font-weight: 400;
 font-size: 28px;
 line-height: 1.21;
 }
+
+
+// .menu-container{
+//   display: none;
+// flex-direction: column;
+// position: absolute;
+// top: 100%;
+// left: 0;
+// background-color: aquamarine;
+// width: 100%;
+// height: 100vh;
+// }
+
+
 .header-list{
+@media screen and (max-width: 767px){
+
+}
+
+
+
 @media screen and (min-width: 768px) {
 display: flex;
 margin-left: auto;
@@ -56,6 +78,7 @@ font-weight: 500;
 font-size: 32px;
 line-height: 1.21;
 display: none;
+
 }
 
 @media screen and (min-width: 768px) {

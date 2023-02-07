@@ -57,6 +57,17 @@ gap: 20px;
 
 }
 
+.container-input{
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+display: flex;
+gap: 32px;
+ 
+ 
+  }
+
+
+}
+
 .contact-input{
  padding-top: 11px;
   padding-bottom: 12px;
@@ -73,6 +84,8 @@ gap: 20px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+ 
  
   }
 
@@ -226,18 +239,68 @@ margin-bottom: 40px;
   
 width: 40px;
 height: 40px;
-background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
-border-radius: 50%;
+// background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+// border-radius: 50%;
 
 }
 
-.contact-link{
-display: block;
+.contact-link-facebook{
+display: flex;
+width: 40px;
+height: 40px;
+justify-content: center;
+align-items:center ;
+
+background-image: url(../svg/facebook-default.svg);
 
 }
-.contact-icon{
+.contact-link-facebook:hover{
+background-image: url(../svg/facebook-hover.svg);
 
 }
+
+.contact-link-twitter{
+display: flex;
+width: 40px;
+height: 40px;
+justify-content: center;
+align-items:center ;
+
+background-image: url(../svg/twitter-default.svg);
+
+}
+.contact-link-twitter:hover{
+background-image: url(../svg/twitter-hover.svg);
+
+}
+
+.contact-link-linkedin{
+display: flex;
+width: 40px;
+height: 40px;
+justify-content: center;
+align-items:center ;
+
+background-image: url(../svg/facebook-default.svg);
+
+}
+.contact-link-linkedin:hover{
+background-image: url(../svg/facebook-hover.svg);
+
+}
+
+
+// .contact-link:hover .contact-icon{
+
+// fill: #ffffff;
+// }
+
+// .contact-icon{
+// width: 20px;
+// fill: transparent;
+// }
+
+
 
 .address-list{
   display: flex;
