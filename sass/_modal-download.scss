@@ -39,6 +39,7 @@ opacity: 1;
 background: #06071b;
 overflow: auto;
 
+z-index: 2;
 }
 
 .backdrop.is-hidden {
@@ -56,6 +57,7 @@ top: 0px;
 
 left: 50%;
 transform: translate(-50%);
+
 
 
 

@@ -71,6 +71,10 @@ $light-bcg: #ffffff;
     max-width: 886px;
     height: 48px;
     margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  
   }
 }
 
@@ -94,6 +98,7 @@ $light-bcg: #ffffff;
   }
 
   @media screen and (min-width: 1280px) {
+    gap: 32px;
   }
 }
 
@@ -120,15 +125,21 @@ $light-bcg: #ffffff;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    width: calc((100% - 32px) / 2);
+
+
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 14px;
     padding-left: 12px;
     padding-right: 12px;
+
+    width: calc((100% - 96px) / 4);
   }
 }
 

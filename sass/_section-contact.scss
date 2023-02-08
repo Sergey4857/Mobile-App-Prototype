@@ -35,6 +35,26 @@ line-height: 1.2;
 
 }
 
+.contact-container{
+@media screen and (min-width: 1280px) {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+  }
+}
+.contact-form-container{
+@media screen and (min-width: 1280px) {
+
+  }
+}
+.contact-box{
+@media screen and (min-width: 1280px) {
+
+
+  }
+
+}
+
 .contact-form{
 
 @media screen and (max-width: 767px) {
@@ -53,15 +73,35 @@ gap: 20px;
 
   @media screen and (min-width: 1280px) {
 
+    width: 608px;
+    height: 284px;
   }
 
 }
 
+
+.contact-label{
+  @media screen and (min-width: 768px) {
+ width: 50%;
+  }
+
+
+}
+
 .container-input{
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
+  width: 100%;
+
+  @media screen and (max-width: 767px) {
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+  }
+
+  @media screen and (min-width: 768px) {
 display: flex;
 gap: 32px;
- 
+ margin-bottom: 20px;
  
   }
 
@@ -69,10 +109,12 @@ gap: 32px;
 }
 
 .contact-input{
+
  padding-top: 11px;
   padding-bottom: 12px;
   padding-left: 8px;
   border-radius: 5px;
+   height: 40px;
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -80,6 +122,8 @@ gap: 32px;
 
   }
   @media screen and (min-width: 768px) {
+
+    width: 100%;
 
   }
 
@@ -90,15 +134,27 @@ gap: 32px;
   }
 
   @media screen and (min-width: 1280px) {
-
+   
   }
+
+}
+
+
+.label-textarea{
 
 
 }
+
+
+
+
+
+
 .contact-textarea{
   padding-top: 12px;
   padding-left: 8px;
   border-radius: 5px;
+  resize: none;
 
 
   @media screen and (max-width: 767px) {
@@ -108,14 +164,16 @@ gap: 32px;
   }
   @media screen and (min-width: 768px) {
 
+   height: 162px; 
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
  
+    width: 100%;
   }
 
   @media screen and (min-width: 1280px) {
-
+    width: 100%;
   }
 
 
@@ -135,7 +193,6 @@ border-radius: 5px;
 cursor: pointer;
 border: transparent;
 
-
 color: $secondary-text-color;
 
   @media screen and (max-width: 767px) {
@@ -143,7 +200,7 @@ color: $secondary-text-color;
 
   }
   @media screen and (min-width: 768px) {
-
+    margin-top: 20px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -151,7 +208,8 @@ color: $secondary-text-color;
   }
 
   @media screen and (min-width: 1280px) {
-
+margin-right: 0;
+margin-left: auto;
   }
 
 
@@ -211,6 +269,9 @@ margin-bottom: 40px;
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
+    max-width: 500px;
+    height: 38px;
+    text-align: left;
   }
 }
 
@@ -232,6 +293,7 @@ margin-bottom: 40px;
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 20px;
+    justify-content: start;
   }
 
 }
@@ -281,12 +343,12 @@ height: 40px;
 justify-content: center;
 align-items:center ;
 
-background-image: url(../svg/facebook-default.svg);
+background-image: url(../svg/linked-in.svg);
 
 }
 .contact-link-linkedin:hover{
-background-image: url(../svg/facebook-hover.svg);
-
+background-image: url(../svg/linkedin-hover.svg);
+background-size: contain;
 }
 
 
@@ -319,7 +381,7 @@ background-image: url(../svg/facebook-hover.svg);
   }
 
   @media screen and (min-width: 1280px) {
-
+    justify-content: start;
   }
 
 
@@ -334,8 +396,13 @@ line-height: 1.2;
 text-align: center;
 
 color: #FFFFFF;
+  @media screen and (min-width: 1280px) {
+    display: flex;;
+  }
 
 }
+
+
 
 .address-link-mail{
   display: block;
@@ -347,7 +414,9 @@ line-height: 1.2;
 text-align: center;
 
 color: #FFFFFF;
-
+@media screen and (min-width: 1280px) {
+    display: flex;;
+  }
 }
 
 .decoration-down{
