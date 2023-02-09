@@ -36,13 +36,13 @@ background-position: top 0px center;
 
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-outline: 2px solid red;
+
 position: absolute;
 display: block;
-width: 723px;
-height: 450px;
-top: 190px;
-left: 32px;
+width: 729px;
+height: 590px;
+top: 110px;
+left: 5px;
 background-image: url(../img/hero-bcg-tablet.png);
 background-repeat: no-repeat; 
 background-size: contain;
@@ -219,7 +219,15 @@ padding-top: 11px;
 padding-bottom: 12px;
 padding-left: 61px;
 padding-right: 60px;
-
+@media screen and (min-width: 768px) {
 z-index: 2;
+}
+
+
+}
+.hero-button:hover,
+.hero-button:focus{
+
+
 
 }

@@ -138,6 +138,13 @@ address {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .header-content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 .header-logo {
   color: #FFFFFF;
@@ -146,6 +153,109 @@ address {
   line-height: 1.21;
 }
 
+@media screen and (max-width: 767px) {
+  .menu-background {
+    pointer-events: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #06071B;
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 3;
+  }
+}
+
+.menu-background.is-open {
+  pointer-events: all;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: relative;
+    top: -19px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.menu-icon-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-close-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 34px;
+  right: 20px;
+  padding: 0;
+  background: transparent;
+  border: transparent;
+}
+@media screen and (min-width: 768px) {
+  .menu-close-button {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-logo-modal {
+    position: absolute;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.21;
+    top: 34px;
+    left: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-logo-modal {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 36px;
+    text-align: center;
+    padding-top: 120px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-list {
     display: -webkit-box;
@@ -164,7 +274,6 @@ address {
     font-weight: 500;
     font-size: 32px;
     line-height: 1.21;
-    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -186,6 +295,16 @@ address {
     display: block;
     padding-top: 29px;
     padding-bottom: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-link:hover,
+  .header-link:active {
+    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }
 
@@ -226,13 +345,12 @@ address {
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .decoration {
-    outline: 2px solid red;
     position: absolute;
     display: block;
-    width: 723px;
-    height: 450px;
-    top: 190px;
-    left: 32px;
+    width: 729px;
+    height: 590px;
+    top: 110px;
+    left: 5px;
     background-image: url(../img/hero-bcg-tablet.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -382,7 +500,11 @@ address {
   padding-bottom: 12px;
   padding-left: 61px;
   padding-right: 60px;
-  z-index: 2;
+}
+@media screen and (min-width: 768px) {
+  .hero-button {
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1640,7 +1762,7 @@ address {
 .box-free:hover {
   background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
   border-radius: 6px;
-  border: 3px solid transparent;
+  border: 3px solid;
 }
 
 .icon-download {
@@ -1661,7 +1783,7 @@ address {
 .box-paid:hover, .box-paid:active {
   background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
   border-radius: 6px;
-  border: 3px solid transparent;
+  border: 3px solid;
 }
 
 .download-info {

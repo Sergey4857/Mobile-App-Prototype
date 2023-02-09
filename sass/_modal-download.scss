@@ -238,17 +238,20 @@ margin-bottom: 32px;
 
 
 .box-free{
+
 border: 3px solid skyblue;
 border-image-source: url(../img/Rectangle\ 38.png);
  border-image-slice: 3;
 padding-top: 28px;
 padding-bottom: 28px;
 
+
 &:hover {
+
 background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 border-radius: 6px;
-border: 3px solid transparent;
 
+border: 3px solid;
 
 }
 }
@@ -280,8 +283,7 @@ padding-bottom: 28px;
 &:hover, &:active{
 background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 border-radius: 6px;
-border: 3px solid transparent;
-
+border: 3px solid;
 
 }
 }
