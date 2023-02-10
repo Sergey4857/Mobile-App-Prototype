@@ -9,7 +9,9 @@ $light-bcg:#FFFFFF;
 
 
 @media screen and (max-width: 767px) {
-
+ background-image: url(../img/mobile/2-features/gradient.png);
+    background-size: cover;
+    background-position: 50% 50% ;
 
 gap: 24px;
 }
@@ -17,6 +19,14 @@ gap: 24px;
 gap: 80px;
 }
 @media screen and (min-width: 1280px) {
+ 
+  
+  background-image: url(../img/desktop/2-features/gradient-desktop-features-1x.png);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
 padding-top: 100px;
 padding-bottom: 168px;
 
