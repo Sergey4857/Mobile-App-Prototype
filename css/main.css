@@ -714,7 +714,7 @@ address {
   display: block;
   width: 28px;
   height: 28px;
-  background-image: url(../svg/romb.svg);
+  background-image: url(../img/romb.png);
 }
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .features-item {
@@ -745,7 +745,7 @@ address {
     display: block;
     width: 28px;
     height: 28px;
-    background-image: url(../svg/romb.svg);
+    background-image: url(../img/romb.png);
   }
 }
 
@@ -761,7 +761,7 @@ address {
     display: block;
     width: 28px;
     height: 28px;
-    background-image: url(../svg/romb.svg);
+    background-image: url(../img/romb.png);
   }
 }
 
