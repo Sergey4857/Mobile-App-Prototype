@@ -212,7 +212,6 @@ gap: 32px;
 display: block;
 font-weight: 700;
 font-size: 16px;
-line-height: 1.2;
 width: 181px;
 height: 42px;
 margin-left: auto;
@@ -240,9 +239,44 @@ color: $secondary-text-color;
 margin-right: 0;
 margin-left: auto;
   }
+   transform: scale(1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
 
+.submit-button:hover {
+
+  transform: scale(1.1);
+  cursor: pointer;
+  background: transparent;
+	color: #ffffff;
+
+	font-size: 16px;
+	border-radius: 5px;
+	position: relative;
+
+  &:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 4px;
+	background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+	background-size: 100% 100%;
+	clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
 
 }
+}
+
+
+
+
+
+
+
 .contact-subtitle{
   margin-bottom: 20px;
 font-weight: 500;
@@ -330,8 +364,6 @@ margin-bottom: 40px;
   
 width: 40px;
 height: 40px;
-// background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
-// border-radius: 50%;
 
 }
 
@@ -344,9 +376,16 @@ align-items:center ;
 
 background-image: url(../svg/facebook-default.svg);
 
+   transform: scale(1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+
 }
 .contact-link-facebook:hover{
 background-image: url(../svg/facebook-hover.svg);
+ transform: scale(1.1);
 
 }
 
@@ -358,11 +397,15 @@ justify-content: center;
 align-items:center ;
 
 background-image: url(../svg/twitter-default.svg);
+ transform: scale(1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .contact-link-twitter:hover{
 background-image: url(../svg/twitter-hover.svg);
-
+transform: scale(1.1);
 }
 
 .contact-link-linkedin{
@@ -373,11 +416,16 @@ justify-content: center;
 align-items:center ;
 
 background-image: url(../svg/linked-in.svg);
+ transform: scale(1);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .contact-link-linkedin:hover{
 background-image: url(../svg/linkedin-hover.svg);
 background-size: contain;
+transform: scale(1.1);
 }
 
 

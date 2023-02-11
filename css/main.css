@@ -538,11 +538,43 @@ address {
   padding-bottom: 12px;
   padding-left: 61px;
   padding-right: 60px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .hero-button {
     z-index: 2;
   }
+}
+
+.hero-button:hover,
+.hero-button:active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
+}
+.hero-button:hover:after,
+.hero-button:active:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  background-size: 100% 100%;
+  -webkit-clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
+          clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
 }
 
 @media screen and (max-width: 767px) {
@@ -1419,7 +1451,6 @@ address {
   display: block;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.2;
   width: 181px;
   height: 42px;
   margin-left: auto;
@@ -1429,6 +1460,12 @@ address {
   cursor: pointer;
   border: transparent;
   color: #ffffff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .submit-button {
@@ -1450,6 +1487,30 @@ address {
     margin-right: 0;
     margin-left: auto;
   }
+}
+
+.submit-button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
+}
+.submit-button:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  background-size: 100% 100%;
+  -webkit-clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
+          clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
 }
 
 .contact-subtitle {
@@ -1549,10 +1610,18 @@ address {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../svg/facebook-default.svg);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-facebook:hover {
   background-image: url(../svg/facebook-hover.svg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact-link-twitter {
@@ -1568,10 +1637,18 @@ address {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../svg/twitter-default.svg);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-twitter:hover {
   background-image: url(../svg/twitter-hover.svg);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact-link-linkedin {
@@ -1587,11 +1664,19 @@ address {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../svg/linked-in.svg);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link-linkedin:hover {
   background-image: url(../svg/linkedin-hover.svg);
   background-size: contain;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .address-list {
@@ -1881,16 +1966,33 @@ address {
 }
 
 .box-free {
-  border: 3px solid skyblue;
-  border-image-source: url(../img/Rectangle\ 38.png);
-  border-image-slice: 3;
+  cursor: pointer;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 88px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.box-free:hover {
+.box-free:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  background-size: 100% 100%;
+  -webkit-clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
+          clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+.box-free:hover, .box-free:active, .box-free:focus {
   background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
   border-radius: 6px;
-  border: 3px solid;
 }
 
 .icon-download {
@@ -1902,21 +2004,53 @@ address {
 }
 
 .box-paid {
-  border: 3px solid skyblue;
-  border-image-source: url(../img/Rectangle\ 38.png);
-  border-image-slice: 3;
+  cursor: pointer;
+  background: transparent;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
   padding-top: 28px;
   padding-bottom: 28px;
 }
-.box-paid:hover, .box-paid:active {
+.box-paid:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  background-size: 100% 100%;
+  -webkit-clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
+          clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+.box-paid:hover, .box-paid:active, .box-paid:focus {
   background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
   border-radius: 6px;
-  border: 3px solid;
 }
 
 .download-info {
   padding-top: 20px;
   padding-bottom: 20px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  position: relative;
+}
+.download-info:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  background-size: 100% 100%;
+  -webkit-clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
+          clip-path: polygon(0% 100%, 2px 100%, 2px 2px, calc(100% - 2px) 2px, calc(100% - 2px) calc(100% - 2px), 2px calc(100% - 2px), 2px 100%, 100% 100%, 100% 0%, 0% 0%);
 }
 @media screen and (max-width: 767px) {
   .download-info {
@@ -2043,6 +2177,7 @@ address {
 }
 
 .btn-download {
+  cursor: pointer;
   display: block;
   margin-left: auto;
   margin-right: auto;

@@ -183,10 +183,7 @@ color: $secondary-text-color;
 font-weight: 500;
 font-size: 32px;
 line-height: 1.21;
-
-
 }
-
 @media screen and (min-width: 768px) {
 font-weight: 400;
 font-size: 12px;
@@ -203,7 +200,6 @@ padding-top: 29px;
 padding-bottom: 28px;
 }
 
-
 }
 
 
@@ -211,8 +207,6 @@ padding-bottom: 28px;
 .header-link:active
 {
   @media screen and (max-width: 767px) {
-
-
 
 background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
 -webkit-background-clip: text;
