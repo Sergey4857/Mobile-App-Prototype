@@ -19,7 +19,7 @@
       <div class="header-content container">
         <a href="./index.html" class="header-logo">Mobileapp</a>
 
-        <button class="open-button-mobile js-open-menu">
+        <button class="open-button-mobile" data-menu-open>
           <svg class="icon-burger">
             <use href="./sprite.svg#icon-Burger"></use>
           </svg>
@@ -27,29 +27,29 @@
         </button>
 
 
-        <div class="menu-background js-menu-container">
+        <div class="menu-background" data-menu>
 
           <div class="menu-container">
 
-            <button class="menu-close-button js-close-menu">
+            <button class="menu-close-button" data-menu-close>
               <svg class="menu-icon-button" width="32" height="32">
                 <use href="./sprite.svg#icon-close"></use>
               </svg>
             </button>
 
             <a href="./index.html" class="header-logo-modal">Mobileapp</a>
-            <ul class="header-list">
-              <li class="header-item"><a href="./index.html" class="header-link">HOME</a></li>
-              <li class="header-item"><a href="./index.html" class="header-link">FEATURES</a></li>
-              <li class="header-item"><a href="./index.html" class="header-link">TEAM</a></li>
-              <li class="header-item"><a href="./index.html" class="header-link">TESTIMONIALS</a></li>
-              <li class="header-item"><a href="./index.html" class="header-link">CONTACT</a></li>
+            <ul class="header-list" header-list>
+              <li class="header-item"><a href="#HOME" class="header-link">HOME</a></li>
+              <li class="header-item"><a href="#FEATURES" class="header-link">FEATURES</a></li>
+              <li class="header-item"><a href="#TEAM" class="header-link">TEAM</a></li>
+              <li class="header-item"><a href="#TESTIMONIALS" class="header-link">TESTIMONIALS</a></li>
+              <li class="header-item"><a href="#CONTACT" class="header-link">CONTACT</a></li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="HOME">
       <div class="hero-content container">
         <h1 class="hero-title">Introducing Mobileapp</h1>
         <p class="hero-text">Maecenas vitae tellus sapien. Prasent</p>
@@ -67,7 +67,7 @@
     </section>
   </div>
 
-  <section class="features section">
+  <section class="features section" id="FEATURES">
     <div class="container">
       <h2 class="features-title">KEY FEATURES</h2>
       <p class="features-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit
@@ -79,9 +79,9 @@
 
         <picture class="features-picture">
           <source srcset="./img/mobile/2-features/features-1-1x.png 1x, 
-                            ./img/mobile/2-features/features-1-2x.png 2x" media="(max-width: 767px)">
+                ./img/mobile/2-features/features-1-2x.png 2x" media="(max-width: 767px)">
           <source srcset="./img/tablet/2-features/features-1-1x.png 1x,
-                            ./img/tablet/2-features/features-1-2x.png 2x"
+                ./img/tablet/2-features/features-1-2x.png 2x"
             media="(min-width: 768px) and (max-width: 1279px)">
           <source srcset="./img/desktop/2-features/key-1x.png 1x,
                             ./img/desktop/2-features/key-2x.png 2x" media="(min-width: 1280px)">
@@ -89,11 +89,6 @@
 
           <img class="features-img" src="./img/mobile/2-features/features-1-1x.png" alt="">
         </picture>
-
-
-
-
-
 
         <div class="features-container">
           <ul class="features-list">
@@ -194,7 +189,7 @@
     </div>
   </section>
 
-  <section class="team section">
+  <section class="team section" id="TEAM">
     <div class="container">
       <h2 class="team-title">OUR TEAM</h2>
       <p class="team-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet
@@ -299,7 +294,7 @@
     </div>
 
   </section>
-  <section class="customers">
+  <section class="customers" id="TESTIMONIALS">
     <div class="container">
       <h2 class="customers-title">WHAT OUR
         COSTUMER’S SAY</h2>
@@ -318,7 +313,7 @@
   </section>
 
 
-  <section class="contact section">
+  <section class="contact section" id="CONTACT">
     <div class="container">
       <h2 class="contact-title">CONTACT US</h2>
       <div class="contact-container">
