@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile App Prototype</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+  <div class="hero-box">
+    <header class="header">
+      <div class="header-content container">
+        <a href="./index.html" class="header-logo">Mobileapp</a>
+
+        <button class="open-button-mobile" data-menu-open>
+          <svg class="icon-burger">
+            <use href="./sprite.svg#icon-Burger"></use>
+          </svg>
+
+        </button>
+
+
+        <div class="menu-background" data-menu>
+
+          <div class="menu-container">
+
+            <button class="menu-close-button" data-menu-close>
+              <svg class="menu-icon-button" width="32" height="32">
+                <use href="./sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <a href="./index.html" class="header-logo-modal">Mobileapp</a>
+            <ul class="header-list" header-list>
+              <li class="header-item"><a href="#HOME" class="header-link">HOME</a></li>
+              <li class="header-item"><a href="#FEATURES" class="header-link">FEATURES</a></li>
+              <li class="header-item"><a href="#TEAM" class="header-link">TEAM</a></li>
+              <li class="header-item"><a href="#TESTIMONIALS" class="header-link">TESTIMONIALS</a></li>
+              <li class="header-item"><a href="#CONTACT" class="header-link">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero" id="HOME">
+      <div class="hero-content container">
+        <h1 class="hero-title">Introducing Mobileapp</h1>
+        <p class="hero-text">Maecenas vitae tellus sapien. Prasent</p>
+        <ul class="hero-list">
+          <li class="hero-item">semper scelerisque tristique a enim</li>
+          <li class="hero-item">Integer ut mattis nulla, eget vehicula elit</li>
+          <li class="hero-item">Prasent rutrum ac nunc et</li>
+        </ul>
+
+        <button class="hero-button" type="submit" data-modal-open>Download</button>
+
+        <div class="decoration"></div>
+      </div>
+
+    </section>
+  </div>
+
+  <section class="features section" id="FEATURES">
+    <div class="container">
+      <h2 class="features-title">KEY FEATURES</h2>
+      <p class="features-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit
+        amet
+        lectus non lacus sollicitudin
+        cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
+
+      <div class="features-content">
+
+        <picture class="features-picture">
+          <source srcset="./img/mobile/2-features/features-1-1x.png 1x, 
+                ./img/mobile/2-features/features-1-2x.png 2x" media="(max-width: 767px)">
+          <source srcset="./img/tablet/2-features/features-1-1x.png 1x,
+                ./img/tablet/2-features/features-1-2x.png 2x"
+            media="(min-width: 768px) and (max-width: 1279px)">
+          <source srcset="./img/desktop/2-features/key-1x.png 1x,
+                            ./img/desktop/2-features/key-2x.png 2x" media="(min-width: 1280px)">
+
+
+          <img class="features-img" src="./img/mobile/2-features/features-1-1x.png" alt="">
+        </picture>
+
+        <div class="features-container">
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="features-box">
+                <h3 class="features-suptitle">Amet varius</h3>
+                <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                  diam a iaculis malesuada</p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="features-box">
+                <h3 class="features-suptitle">Amet varius</h3>
+                <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                  diam a iaculis malesuada</p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="features-box">
+                <h3 class="features-suptitle">Amet varius</h3>
+                <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                  diam a iaculis malesuada</p>
+              </div>
+            </li>
+          </ul>
+
+
+          <ul class="features-list">
+
+            <li class="features-item">
+              <div class="features-box">
+                <h3 class="features-suptitle">Amet varius</h3>
+                <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                  diam a iaculis malesuada</p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="features-box">
+                <h3 class="features-suptitle">Amet varius</h3>
+                <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                  diam a iaculis malesuada</p>
+              </div>
+            </li>
+            <li class=" features-item-last">
+              <div class="features-box">
+                <h3 class="features-suptitle">Amet varius</h3>
+                <p class="features-desc">Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                  diam a iaculis malesuada</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+
+
+    </div>
+    
+  </section>
+
+  <section class="video section">
+    <div class="container video-container">
+      <div class="video-box">
+
+        <h2 class="video-title">WATCH THE VIDEO</h2>
+        <p class="video-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
+          fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi
+          dapibus,
+          ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+        <ul class="video-list">
+          <li class="video-item"><a href="./index.html" class="video-link">
+
+              <img src="./img/mobile/3-video/apple-1-1x.png" width="60" height="60" alt="apple">
+            </a></li>
+          <li class="video-item"><a href="./index.html" class="video-link">
+              <img src="./img/mobile/3-video/android-1-1x.png" width="60" height="60" alt="android">
+
+            </a></li>
+        </ul>
+      </div>
+
+
+      <picture class="video-picture">
+        <source srcset="./img/mobile/3-video/video-1x.png 1x, 
+          ./img/mobile/3-video/video-2x.png 2x" media="(max-width: 767px)">
+        <source srcset="./img/tablet/3-video/video-1-1x.png 1x,
+                      ./img/tablet/3-video/video-1-2x.png 2x" media="(min-width: 768px) and (max-width: 1279px)">
+        <source srcset="./img/desktop/3-video/video-1-1x.png 1x,
+                    ./img/desktop/3-video/video-1-2x.png 2x" media="(min-width: 1280px)">
+
+
+        <img class="video-img" src="./img/mobile/3-video/video-1x.png" alt="Jon Doe">
+
+
+      </picture>
+
+    </div>
+  </section>
+
+  <section class="team section" id="TEAM">
+    <div class="container">
+      <h2 class="team-title">OUR TEAM</h2>
+      <p class="team-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit amet
+        lectus non lacus sollicitudin
+        cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
+      <ul class="team-list">
+        <li class="team-item">
+
+          <picture class="team-picture">
+            <source srcset="./img/mobile/4-team/team1-1x.jpg 1x, 
+                    ./img/mobile/4-team/team1-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./img/tablet/4-team/team-1-1x.jpg 1x,
+                            ./img/tablet/4-team/team-1-2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)">
+            <source srcset="./img/desktop/4-team/team-1-1x.jpg 1x,
+                            ./img/desktop/4-team/team-1-2x.jpg 2x" media="(min-width: 1280px)">
+
+
+            <img class="team-img" src="./img/desktop/4-team/team-1-1x.jpg" alt="Jon Doe" width="296">
+
+          </picture>
+
+
+
+          <div class="team-content">
+            <p class="team-name">Jon Doe</p>
+            <p class="team-desc">Managing Director</p>
+          </div>
+
+        </li>
+        <li class="team-item">
+
+          <picture class="team-picture">
+            <source srcset="./img/mobile/4-team/team2-1x.jpg 1x, 
+                            ./img/mobile/4-team/team2-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./img/tablet/4-team/team-2-1x.jpg 1x,
+                            ./img/tablet/4-team/team-2-2x.jpg 2x" media="(min-width: 768px) and (max-width: 1279px)">
+            <source srcset="./img/desktop/4-team/team-2-1x.jpg 1x,
+                            ./img/desktop/4-team/team-2-2x.jpg 2x" media="(min-width: 1280px)">
+
+
+            <img class="team-img" src="./img/desktop/4-team/team-2-1x.jpg" alt="Jane Doe" width="296">
+
+
+          </picture>
+
+
+
+
+
+          <div class="team-content">
+            <p class="team-name">Jon Doe</p>
+            <p class="team-desc">Lead Designer</p>
+          </div>
+
+        </li>
+        <li class="team-item">
+
+          <picture class="team-picture">
+            <source srcset="./img/mobile/4-team/team3-1x.jpg 1x, 
+                                ./img/mobile/4-team/team3-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./img/tablet/4-team/team-3-1x.jpg 1x,
+                                ./img/tablet/4-team/team-3-2x.jpg 2x"
+              media="(min-width: 768px) and (max-width: 1279px)">
+            <source srcset="./img/desktop/4-team/team-3-1x.jpg 1x,
+                                ./img/desktop/4-team/team-3-2x.jpg 2x" media="(min-width: 1280px)">
+
+
+            <img class="team-img" src="./img/desktop/4-team/team-3-1x.jpg" alt="Jane Doe" width="296">
+
+
+          </picture>
+
+          <div class="team-content">
+            <p class="team-name">Jon Doe</p>
+            <p class="team-desc">Lead Developer</p>
+          </div>
+
+        </li>
+        <li class="team-item">
+
+          <picture class="team-picture">
+            <source srcset="./img/mobile/4-team/team4-1x.jpg 1x, 
+                                ./img/mobile/4-team/team4-2x.jpg 2x" media="(max-width: 767px)">
+            <source srcset="./img/tablet/4-team/team-4-1x.jpg 1x,
+                                ./img/tablet/4-team/team-4-2x.jpg 2x"
+              media="(min-width: 768px) and (max-width: 1279px)">
+            <source srcset="./img/desktop/4-team/team-4-1x.jpg 1x,
+                                ./img/desktop/4-team/team-4-2x.jpg 2x" media="(min-width: 1280px)">
+
+            <img class="team-img" src="./img/desktop/4-team/team-4-1x.jpg" alt="Jane Doe" width="296">
+
+
+          </picture>
+
+          <div class="team-content">
+            <p class="team-name">Jon Doe</p>
+            <p class="team-desc">Sr. UI Designer</p>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+
+  </section>
+  <section class="customers" id="TESTIMONIALS">
+    <div class="container">
+      <h2 class="customers-title">WHAT OUR
+        COSTUMER’S SAY</h2>
+      <img class="customers-img" src="./img/desktop/5-costumers/costumers-1-1x.png" alt="" width="181" height="181">
+      <p class="customers-name">Jon Doe</p>
+      <p class="customers-desc">Company Inc.</p>
+      <p class="customers-text">Vestibulum placerat nisl quis justo venenatis, et lacinia nunc venenatis. semper libero
+        nec sapien condimentum
+        dignissim. Nunc ante ligula, tempor in tellus in, gravida vestibulum justo. Nulla facilisi. Nullam tristique
+        eros
+        quis
+        nibh tempus, vel viverra dolor pretium. Nam et vehicula leo. Vivamus hendrerit sit amet ante a tempus. Aenean
+        gravida
+        massa et ante pulvinar, id</p>
+    </div>
+  </section>
+
+
+  <section class="contact section" id="CONTACT">
+    <div class="container">
+      <h2 class="contact-title">CONTACT US</h2>
+      <div class="contact-container">
+
+        <div class="contact-box">
+          <form class="contact-form">
+            <div class="container-input">
+
+              <label class="contact-label" for="name">
+                <input class="contact-input" type="text" id="name" placeholder="Name" required>
+              </label>
+
+              <label class="contact-label" for="mail">
+                <input class="contact-input" type="email" id="mail" placeholder="Email" required>
+              </label>
+            </div>
+
+            <label class="label-textarea" for="message">
+              <textarea class="contact-textarea" name="message" id="message" placeholder="Message"></textarea>
+            </label>
+            <button class="submit-button" type="submit">
+              SUBMIT
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-form-container">
+          <p class="contact-subtitle">Get in touch with us</p>
+          <p class="contact-text">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus
+            fringilla
+            nulla sollicitudin tristique.</p>
+          <ul class="contact-list">
+            <li class="contact-item"><a href="./index.html" class="contact-link-facebook">
+
+              </a></li>
+            <li class="contact-item"><a href="./index.html" class="contact-link-twitter">
+
+              </a></li>
+            <li class="contact-item"><a href="./index.html" class="contact-link-linkedin">
+
+              </a></li>
+          </ul>
+          <address>
+            <ul class="address-list">
+              <li class="address-item"><a href="./index.html" class="address-link-number">+xx-xxxx-xxxx-xx</a></li>
+              <li class="address-item"><a href="./index.html" class="address-link-mail">goIteens@gmail.com</a></li>
+            </ul>
+
+          </address>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="decoration-down"></div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-text">
+        © 2019 GoIteens Template. All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+
+
+      <h2 class="title-download">Download</h2>
+      <button class="btn-close-modal" data-modal-close>
+        <svg class="icon-close-modal">
+          <use href="./sprite.svg#icon-close"></use>
+        </svg>
+
+      </button>
+      <div class="box-download">
+
+        <div class="box-free">
+
+          <svg class="icon-download" width="80" height="106">
+            <use href="./sprite.svg#icon-download"></use>
+          </svg>
+          <h2 class="subtitle-download">Download free plan</h2>
+          <ul class="list-download">
+            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+          </ul>
+        </div>
+
+        <div class="box-paid">
+          <svg class="icon-download" width="80" height="106">
+            <use href="./sprite.svg#icon-download"></use>
+          </svg>
+          <h2 class="subtitle-download">Download for 20$</h2>
+          <ul class="list-download">
+            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+            <li class="item-download">Donec posuere augue venenatis, aliquet</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="download-text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit
+        amet lectus non lacus</p>
+
+      <div class="download-info">
+
+        <ul class="download-list-info">
+          <li class="download-item-info icon-app">
+            <div class="download-content">
+              <p class="download-subtitle-info">App name</p>
+              <p class="download-text-info">Mobileapp.layout</p>
+            </div>
+          </li>
+          <li class="download-item-info icon-license">
+            <div class="download-content">
+              <p class="download-subtitle-info">License</p>
+              <p class="download-text-info">Free</p>
+            </div>
+          </li>
+          <li class="download-item-info icon-author">
+            <div class="download-content">
+              <p class="download-subtitle-info">Author</p>
+              <p class="download-text-info">Mobile Marrket App.com</p>
+            </div>
+          </li>
+          <li class="download-item-info icon-data">
+            <div class="download-content">
+              <p class="download-subtitle-info">Data</p>
+              <p class="download-text-info">21.02.2022</p>
+            </div>
+          </li>
+        </ul>
+        <!-- <div class="download-info-decoration"></div> -->
+        <ul class="download-list-info">
+          <li class="download-item-info icon-oc">
+            <div class="download-content">
+              <p class="download-subtitle-info">OC</p>
+              <p class="download-text-info">Windows</p>
+            </div>
+          </li>
+          <li class="download-item-info icon-language">
+            <div class="download-content">
+              <p class="download-subtitle-info">Language</p>
+              <p class="download-text-info">English</p>
+            </div>
+          </li>
+          <li class="download-item-info icon-size">
+            <div class="download-content">
+              <p class="download-subtitle-info">Size</p>
+              <p class="download-text-info">4.16 MB</p>
+            </div>
+          </li>
+          <li class="download-item-info icon-downloads">
+            <div class="download-content">
+              <p class="download-subtitle-info">Downloads</p>
+              <p class="download-text-info">964</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      <button type="submit" class="btn-download hero-button">Download</button>
+
+    </div>
+  </div>
+
+
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
+
+</body>
+
+</html>
